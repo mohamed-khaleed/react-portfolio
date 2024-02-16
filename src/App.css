@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+body {
+  background-color: #002137;
+  color: #f2f4f3;
+  font-family: "Lato", sans-serif;
+}
+header {
+  height: 100vh;
+}
+header h1 {
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img {
+  background-color: #002e4e;
+  border-radius: 10px;
+}
+.cv-btn {
+  background-color: transparent;
+  border: 2px #f2f4f3 solid;
+  color: #f2f4f3;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.about-me {
+  background-color: #002e4e;
+}
+
+.bg-lightBlue {
+  background-color: #00406c !important;
+}
+
+.card {
+  width: 90%;
+  height: 300px;
+
+  border-radius: 20px;
+  background: #002e4e;
+  box-shadow: 10px 10px 20px #002e4e, -10px -10px 20px #002e4e;
+
+  color: #f2f4f3;
+}
+
+.portfolio {
+  background-color: #001523;
+}
+.line {
+  width: 100%;
+  height: 3px;
+
+  background-color: #f2f4f3;
+}
+
+@media (max-width: 575px) {
+  /* Styles to apply when screen width is 575px or less (xs) */
+  .custom-div {
+    width: 100% !important;
+  }
+  footer {
+    height: 300px !important;
+  }
+  .getIn-touch-part {
+    text-align: center;
+  }
+  .skills-progress {
+    text-align: center;
+  }
+  header,
+  .about-me,
+  .skills {
+    padding: 20px !important;
+  }
+  .portfolio {
+    padding: 20px !important;
+    text-align: center;
+  }
+  header img {
+    width: 90% !important;
+    margin-top: 30px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.skills p {
+  color: #d8dfe6;
+}
+.skills-progress div {
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 20px !important;
+  display: inline-block;
+  height: 40px;
+  width: 10rem;
+  text-transform: uppercase;
+}
+
+progress {
+  appearance: none;
+  border: none;
+  width: 300px;
+  height: 30px;
+  margin: 0;
+  border-radius: 2px;
+  background: #00111c;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 2px;
+  background: #00111c;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00406c, #003a61);
+}
+
+progress::-moz-progress-bar {
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00406c, #003a61);
+}
+
+.cv-btn:hover {
+  background-color: #f2f4f3;
+  border: 2px #00406c solid;
+  color: #00406c;
+}
+
+footer {
+  height: 200px;
+}
+
+.h-100 {
+  height: 100px;
+}
+.copyright-part,
+.contact-me-btn-part,
+.card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: #f2f4f3;
+  font-size: 20px;
 }
